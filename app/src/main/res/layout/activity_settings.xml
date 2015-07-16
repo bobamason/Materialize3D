@@ -1,0 +1,72 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.masonapps.materialize3d.graphics.GLSurface
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/glsurface" />
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_label_fragment_height"
+            android:layout_below="@id/toolbar"
+            android:orientation="horizontal"
+            android:background="#9937474F"
+            android:id="@+id/menu_layout">
+            <include
+                layout="@layout/icon_label_list_item"
+                android:id="@+id/material_btn"/>
+            <include
+                layout="@layout/icon_label_list_item"
+                android:id="@+id/color_btn"/>
+            <include
+                layout="@layout/icon_label_list_item"
+                android:id="@+id/view_btn"/>
+            <include
+                layout="@layout/icon_label_list_item"
+                android:id="@+id/other_btn"/>
+        </LinearLayout>
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_layout"
+            android:id="@+id/container_options"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/colorButton"
+            android:text="Color"
+            android:padding="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/colorContainer"
+            android:layout_above="@id/colorButton"
+            android:layout_toLeftOf="@id/colorButton"/>
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:name="org.masonapps.materialize3d.EffectListFragment"
+        android:id="@+id/drawer_view"
+        android:layout_gravity="left" />
+
+</android.support.v4.widget.DrawerLayout>

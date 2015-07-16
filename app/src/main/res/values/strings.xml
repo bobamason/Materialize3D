@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Materialize 3D</string>
+
+    <string name="action_wallpaper">Go To Wallpapers</string>
+    <string name="wallpaper_description">Materialize 3D</string>
+
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_closed">drawer closed</string>
+    <string name="settings_activity_label">Materialize 3D</string>
+    <string name="select_photo">Select Photo</string>
+    <string name="select_folder">Select Folder</string>
+    <string name="loading_screenshot">preparing screenshot…</string>
+    <string name="share_string">Share</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

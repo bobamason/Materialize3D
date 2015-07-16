@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EffectListFragment"
+    android:orientation="vertical"
+    android:background="?android:windowBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Effects"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:padding="12dp"
+        android:gravity="center"
+        android:background="?attr/colorPrimaryDark"
+        android:textColor="#fff" />
+
+    <ExpandableListView
+        android:id="@+id/effects_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@drawable/expand_indicator" />
+
+</LinearLayout>

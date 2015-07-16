@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.masonapps.materialize3d.views.SquareImageView
+        android:id="@+id/thumbnail_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_dark"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/thumbnail_nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumbnail_imageView"
+        android:background="@color/label_background"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/title_text_color" />
+</RelativeLayout>

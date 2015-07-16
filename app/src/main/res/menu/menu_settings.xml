@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingsActivity">
+    <item
+        android:id="@+id/action_select_image"
+        android:title="Select Image"
+        android:icon="@mipmap/ic_photo_library_white_24dp"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_share"
+        app:showAsAction="always"
+        android:title="Share"
+        android:icon="@mipmap/ic_share_white_24dp"
+        android:orderInCategory="2" />
+    <item
+        android:id="@+id/action_wallpapers"
+        android:title="@string/action_wallpaper"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

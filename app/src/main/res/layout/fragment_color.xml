@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/abc_popup_background_mtrl_mult" tools:context="org.masonapps.materialize3d.ColorFragment">
+
+    <org.masonapps.materialize3d.views.ColorPickerView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:padding="10dp"
+        android:id="@+id/colorPicker"/>
+
+</FrameLayout>
